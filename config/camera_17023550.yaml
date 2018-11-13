@@ -1,0 +1,13 @@
+img_topic: /camera_17023550/pg_17023550/image_raw
+
+
+img_info_topic: /camera_17023550/pg_17023550/camera_info
+
+velodyne_topic: /left_selected_points
+
+matrix_17023550: [0.99847 ,0.018338 ,-0.052171 ,-0.1001,
+           -0.051733, -0.023586 ,-0.99838 ,-0.073211,
+           -0.019539 ,0.99955 ,-0.022601 ,-0.089245,
+           0 ,0, 0, 1]
+
+

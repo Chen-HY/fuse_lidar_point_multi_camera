@@ -1,0 +1,33 @@
+<launch>
+
+
+    <node  pkg="fuse_point_multi_camera" type="fuse_color_with_3_camera" name="chy_one"  respawn="true"  output="screen">
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/topic_name.yaml"/>
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17490873.yaml"/>
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17082053.yaml"/>
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17082034.yaml"/>
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17082022.yaml"/>
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17082012.yaml"/>
+
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_17023550.yaml"/>
+        <rosparam file="$(find fuse_point_multi_camera)/config/camera_16360216.yaml"/>
+
+    </node>
+
+    <node  pkg="fuse_point_multi_camera" type="fuse_color_with_4_camera" name="chy_two"  respawn="true"  output="screen">
+
+
+
+
+    </node>
+
+
+
+
+
+</launch>

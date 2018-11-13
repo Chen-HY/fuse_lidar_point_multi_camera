@@ -1,0 +1,15 @@
+
+
+
+ source devel/setup.bash
+
+
+ roslaunch  fuse_point_multi_camera bag_play.launch
+
+
+ roslaunch fuse_point_multi_camera result.launch
+
+
+
+
+
