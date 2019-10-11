@@ -30,6 +30,6 @@ camera_17490873_info: /camera_17490873/pg_17490873/camera_info
 
 
 
-velodyne_topic_all: /left_selected_points
+velodyne_topic_all: /vertical_velodyne/velodyne_points
 
 

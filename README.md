@@ -14,4 +14,6 @@ This package is used for fuse camera and velodyne sensor , add color to pointclo
  roslaunch fuse_point_multi_camera result.launch
 
 
-```
+``` 
+
+it will public cloud point with colors ```/chy/point_with_color```

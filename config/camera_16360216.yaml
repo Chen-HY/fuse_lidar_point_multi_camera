@@ -3,10 +3,10 @@ img_topic:  /camera_16360216/pg_16360216/image_raw
 
 
 
-img_info_topic: /camera_16360216/pg_16360216/camera_info
+img_info_topic: /camera_right_front/camera_info
 
 
-velodyne_topic: /left_selected_points
+velodyne_topic: /vertical_velodyne/velodyne_points
 
 matrix_16362016: [-0.0031758 ,0.99959, 0.0286, -0.10928,
            -0.0094069 ,-0.028628, 0.99955 ,0.35117,

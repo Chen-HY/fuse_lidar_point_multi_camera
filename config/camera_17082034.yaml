@@ -3,8 +3,8 @@ img_topic: /camera_17082034/pg_17082034/image_raw
 
 
 
-img_info_topic: /camera_17082034/pg_17082034/camera_info
-velodyne_topic: /left_selected_points
+img_info_topic: /camera_front_l/camera_info
+velodyne_topic: /vertical_velodyne/velodyne_points
 
 matrix_17082034: [0.9993, 0.0010386, 0.037407 ,0.079574,
            0.037414, -0.0088616, -0.99926, -0.051979,

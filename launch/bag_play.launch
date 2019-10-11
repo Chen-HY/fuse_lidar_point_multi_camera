@@ -1,43 +1,55 @@
 <launch>
 
+<!--    <param name = "use_sim_time" value = "true"/>-->
+    <node pkg="rosbag" type="play" name="play" output="screen" args="--clock -r 0.1    /home/shanghaitech/Documents/catkin_ws/MARS-8.bag">
 
-    <param name = "use_sim_time" value = "true"/>
-    <node pkg="rosbag" type="play" name="play" output="screen" args="--clock -r 0.1    /media/shanghaitech/DE3AA10B3AA0E22F/chy_cam_imu_Data/verify_bag/verify_severa_camera_with_split_data.bag"/>
+        <remap from="/camera_right_front/camera_info"  to="/camera_16360216/pg_16360216/camera_info" />
+        <remap from="/camera_left_front/camera_info"  to="/camera_17490873/pg_17490873/camera_info" />
+
+        <remap from="/camera_front_r/camera_info"  to="/camera_17023550/pg_17023550/camera_info" />
+        <remap from="/camera_left_back/camera_info"  to="/camera_17082012/pg_17082012/camera_info" />
+
+        <remap from="/camera_right_back/camera_info"  to="/camera_17082022/pg_17082022/camera_info" />
+        <remap from="/camera_front_l/camera_info"  to="/camera_17082034/pg_17082034/camera_info" />
+        <remap from="/camera_back/camera_info"  to="/camera_17082053/pg_17082053/camera_info" />
+
+    </node>
+
 
     <node name="republish0" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_16360216/pg_16360216/image_raw
-    raw out:=/camera_16360216/pg_16360216/image_raw"/>
+          args="compressed in:=/camera_right_front/image_raw
+    raw out:=/camera_16360216/pg_16360216/image_raw">
+    </node>
 
 
     <node name="republish1" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17490873/pg_17490873/image_raw
+          args="compressed in:=/camera_left_front/image_raw
     raw out:=/camera_17490873/pg_17490873/image_raw"/>
 
 
     <node name="republish2" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17023550/pg_17023550/image_raw
+          args="compressed in:=/camera_front_r/image_raw
     raw out:=/camera_17023550/pg_17023550/image_raw"/>
 
 
     <node name="republish3" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17082012/pg_17082012/image_raw
+          args="compressed in:=/camera_left_back/image_raw
     raw out:=/camera_17082012/pg_17082012/image_raw"/>
 
 
     <node name="republish4" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17082022/pg_17082022/image_raw
+          args="compressed in:=/camera_right_back/image_raw
     raw out:=/camera_17082022/pg_17082022/image_raw"/>
 
 
     <node name="republish5" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17082034/pg_17082034/image_raw
+          args="compressed in:=/camera_front_l/image_raw
     raw out:=/camera_17082034/pg_17082034/image_raw"/>
 
 
     <node name="republish6" type="republish" pkg="image_transport" respawn="true"  output="screen"
-          args="compressed in:=/camera_17082053/pg_17082053/image_raw
+          args="compressed in:=/camera_back/image_raw
     raw out:=/camera_17082053/pg_17082053/image_raw"/>
-
 
 
 </launch>

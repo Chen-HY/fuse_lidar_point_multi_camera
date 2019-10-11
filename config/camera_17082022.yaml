@@ -1,9 +1,9 @@
 
 img_topic: /camera_17082022/pg_17082022/image_raw
 
-img_info_topic: /camera_17082022/pg_17082022/camera_info
+img_info_topic: /camera_right_back/camera_info
 
-velodyne_topic: /left_selected_points
+velodyne_topic: /vertical_velodyne/velodyne_points
 
 matrix_17082022: [-0.0086063, 0.99991 ,0.010732 ,0.32444,
            -0.011871, -0.010834 ,0.99987, 0.3522,

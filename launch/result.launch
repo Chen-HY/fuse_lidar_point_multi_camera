@@ -19,10 +19,8 @@
 
     </node>
 
+
     <node  pkg="fuse_point_multi_camera" type="fuse_color_with_4_camera" name="chy_two"  respawn="true"  output="screen">
-
-
-
 
     </node>
 
