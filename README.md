@@ -16,4 +16,8 @@ This package is used for fuse camera and velodyne sensor , add color to pointclo
 
 ``` 
 
-it will public cloud point with colors ```/chy/point_with_color```
+it will public cloud point with colors ```/point_with_color```
+
+![](./result/graph.png)
+![](./result/img_16362016.jpg)
+![](./result/img_17023550.jpg)
