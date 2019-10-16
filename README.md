@@ -1,4 +1,4 @@
-# My person website 
+# My personal website 
 ```https://robotics.shanghaitech.edu.cn/people/hongyu```
 
 # fuse_lidar_point_multi_camera
