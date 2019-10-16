@@ -12,4 +12,5 @@
 
 
 
+ rostopic hz /camera_16360216/pg_16360216/image_raw /camera_16360216/pg_16360216/camera_info /camera_17023550/pg_17023550/image_raw /camera_17023550/pg_17023550/camera_info /camera_17082012/pg_17082012/image_raw /camera_17082022/pg_17082022/image_raw /camera_17082022/pg_17082022/camera_info  /chy/pcl_output /chy/point_with_color
 

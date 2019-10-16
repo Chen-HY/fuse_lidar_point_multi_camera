@@ -1,9 +1,11 @@
 <launch>
 
 <!--    <param name = "use_sim_time" value = "true"/>-->
-    <node pkg="rosbag" type="play" name="play" output="screen" args="--clock -r 0.1    /home/shanghaitech/Documents/catkin_ws/MARS-8.bag">
+<!--    <node pkg="rosbag" type="play" name="play" output="screen" args="&#45;&#45;clock -r 0.1    /home/shanghaitech/Documents/catkin_ws/MARS-8.bag">-->
+        <node pkg="rosbag" type="play" name="play" output="screen" args="--clock -r 0.1       /home/shanghaitech/Downloads/MARS-Loop_3.bag" >
+<!--        /home/shanghaitech/Downloads/MARS-NoLoop_2.bag  /home/shanghaitech/Downloads/MARS-NoLoop_3.bag /home/shanghaitech/Downloads/MARS-NoLoop_4.bag ">-->
 
-        <remap from="/camera_right_front/camera_info"  to="/camera_16360216/pg_16360216/camera_info" />
+    <remap from="/camera_right_front/camera_info"  to="/camera_16360216/pg_16360216/camera_info" />
         <remap from="/camera_left_front/camera_info"  to="/camera_17490873/pg_17490873/camera_info" />
 
         <remap from="/camera_front_r/camera_info"  to="/camera_17023550/pg_17023550/camera_info" />

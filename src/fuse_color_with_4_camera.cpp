@@ -159,7 +159,6 @@ void callback(const PointCloud2::ConstPtr& pcl_msg,
 
     for(int i = 0; i < cloud->points.size(); i++){
 
-        
         coloured_temp.x = coloured->points[i].x;
         coloured_temp.y = coloured->points[i].y;
         coloured_temp.z = coloured->points[i].z;
@@ -171,15 +170,33 @@ void callback(const PointCloud2::ConstPtr& pcl_msg,
         pcl::PointXYZRGB coloured_return_17082053 = one_camera_assign_color(img_17082053,coloured_return_17082034,transform_mat_camera_17082053,cam_model_17082053);
         pcl::PointXYZRGB coloured_return_17490873 = one_camera_assign_color(img_17490873,coloured_return_17082053,transform_mat_camera_17490873,cam_model_17490873);
 
+        if (coloured_return_17490873.r == 0 &&  coloured_return_17490873.g == 255 && coloured_return_17490873.b == 0 )
+        {
+          //  cout<<"green................................"; // remove all green points
 
-        coloured->points[i].x = coloured_return_17490873.x;
-        coloured->points[i].y = coloured_return_17490873.y;
+            coloured->points[i].x = 0;
+            coloured->points[i].y = 0;
 
-        coloured->points[i].z = coloured_return_17490873.z;
-        coloured->points[i].r = coloured_return_17490873.r;
+            coloured->points[i].z = 0;
+            coloured->points[i].r = 0;
 
-        coloured->points[i].g = coloured_return_17490873.g;
-        coloured->points[i].b = coloured_return_17490873.b;
+            coloured->points[i].g = 0;
+            coloured->points[i].b = 0;
+
+        ;
+        }
+        else{
+
+            coloured->points[i].x = coloured_return_17490873.x;
+            coloured->points[i].y = coloured_return_17490873.y;
+
+            coloured->points[i].z = coloured_return_17490873.z;
+            coloured->points[i].r = coloured_return_17490873.r;
+
+            coloured->points[i].g = coloured_return_17490873.g;
+            coloured->points[i].b = coloured_return_17490873.b;
+
+        }
 
 
     }
